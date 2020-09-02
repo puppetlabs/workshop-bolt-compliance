@@ -1,2 +1,2 @@
-# windows-boltshop
-Labs for managing Windows machines using Puppet-Bolt 
+# Bolt Compliance Workshop
+Labs for checking and enforcing compliance controls with Puppet Bolt 
