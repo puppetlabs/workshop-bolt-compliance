@@ -1,11 +1,20 @@
 groups:
   - name: windows
     targets:
-      - uri: boltshop99.classroom.puppet.com
-        alias: www
+      - uri: boltwin99.classroom.puppet.com
     config:
       transport: winrm
       winrm:
         user: Administrator
         password: Puppetlabs!
         ssl: false
+  - name: linux
+    targets:
+      - uri: boltnix99.classroom.puppet.com
+    config:
+      transport: ssh
+    ssh:
+      host-key-check: false
+      user: centos
+      run-as: root
+      private-key: /path/to/boltkey.pem
