@@ -1,0 +1,11 @@
+groups:
+  - name: windows
+    targets:
+      - uri: boltshop99.classroom.puppet.com
+        alias: www
+    config:
+      transport: winrm
+      winrm:
+        user: Administrator
+        password: Puppetlabs!
+        ssl: false

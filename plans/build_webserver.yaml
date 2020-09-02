@@ -1,0 +1,34 @@
+#name: boltshop::build_webserver
+description: Deploys an IIS site and base configuration items.
+
+parameters:
+  targets:
+    type: TargetSpec
+    description: The targets to configure
+
+steps:
+  - task: boltshop::windowsfeature
+    description: "Installs the IIS Windows Feature"
+    targets: "$targets"
+    parameters:
+      action: install
+      feature: Web-WebServer
+  - command: "if !(Test-Path C:\\inetpub\\mywebsite) {New-Item -ItemType Directory C:\\inetpub\\mywebsite -Force}"
+    description: "Creating new website directory."
+    targets: $targets
+  - upload: boltshop/mywebsite
+    description: "Uploading the website to the appropriate folder."
+    destination: "C:\\inetpub"
+    targets: $targets
+  - name: iis
+    targets: $targets
+    resources:
+      - iis_site: "Default Web Site"
+        parameters:
+          ensure: absent
+      - iis_site: "My Web Site"
+        parameters:
+          ensure: present
+          physicalpath: "C:\\inetpub\\mywebsite"
+          applicationpool: "DefaultAppPool"
+return: $iis
