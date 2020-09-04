@@ -1,5 +1,5 @@
 ---
-name: boltshop
+name: compliance
 inventoryfile: "./inventory.yaml"
 modulepath: 
   - "./modules"
