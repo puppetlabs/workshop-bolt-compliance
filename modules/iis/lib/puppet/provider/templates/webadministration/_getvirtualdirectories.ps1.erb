@@ -1,0 +1,31 @@
+Get-WebVirtualDirectory | ForEach-Object {
+  $physicalpath = [string]$_.PhysicalPath
+  $user_name = [string]$_.userName
+  $password = [string]$_.password
+  
+  $name = [string]$_.Path
+  $name = $name -Replace "^/", ''
+  $name = $name -Replace "/",  '\'
+  
+  if ($_.ItemXPath -Match "application\[\@path\=(.*?)\]") {
+    $application = $matches[1].Replace("'", '')
+  } else {
+    $application = '/'
+  }
+  
+  if ($_.ItemXPath -Match "site\[\@name\=(.*?) and") {
+    $sitename = $matches[1].Replace("'", '')
+  } else {
+    $sitename = ''
+  }
+
+  New-Object -TypeName PSObject -Property @{
+    name         = $name
+    physicalpath = $physicalpath
+    user_name    = $user_name
+    password     = $password
+    application  = $application
+    sitename     = $sitename
+  }
+
+} | ConvertTo-Json -Depth 10

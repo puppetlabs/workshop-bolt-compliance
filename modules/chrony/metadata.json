@@ -1,0 +1,52 @@
+{
+  "name": "aboe-chrony",
+  "version": "0.3.2",
+  "author": "aboe",
+  "summary": "Manage chrony daemon on Linux",
+  "license": "Apache-2.0",
+  "source": "git://github.com/aboe76/puppet-chrony.git",
+  "project_page": "https://github.com/aboe76/puppet-chrony",
+  "issues_url": "https://github.com/aboe76/puppet-chrony/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "operatingsystem": "SLES"
+    },
+    {
+      "operatingsystem": "Archlinux"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 5.5.8 < 7.0.0"
+    }
+  ],
+  "pdk-version": "1.15.0",
+  "template-url": "pdk-default#1.15.0",
+  "template-ref": "tags/1.15.0-0-g0bc522e"
+}
