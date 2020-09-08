@@ -1,0 +1,107 @@
+{
+  "name": "kemra102-auditd",
+  "version": "2.2.0",
+  "author": "Danny Roberts",
+  "summary": "Manage the audit daemon and it's rules.",
+  "license": "BSD-2-Clause",
+  "source": "https://github.com/kemra102/puppet-auditd",
+  "project_page": "https://github.com/kemra102/puppet-auditd",
+  "issues_url": "https://github.com/kemra102/puppet-auditd/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.6.0"},
+    {"name":"puppetlabs-concat","version_requirement":">= 1.1.0"}
+  ],
+  "data_provider": null,
+  "tags": [
+    "audit",
+    "auditd",
+    "auditing",
+    "monitoring",
+    "accounting",
+    "logging",
+    "logs"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Amazon"
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "22",
+        "23"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04",
+        "16.04"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Archlinux"
+    },
+    {
+      "operatingsystem": "Gentoo"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0"
+    }
+  ]
+}

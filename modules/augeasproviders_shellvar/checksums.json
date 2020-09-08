@@ -1,0 +1,19 @@
+{
+  "CHANGELOG.md": "faa3a6eded2bb9e850e036861d9372d9",
+  "Gemfile": "0c7927147f6e52b7e32c8fdebfd08d7b",
+  "LICENSE": "dd6462909b746fc9ec71656f9e9c71f9",
+  "README.md": "a84a5271f6e17e146867ebe810aca904",
+  "Rakefile": "9fa53df215e4b68e62591deac3aad5ba",
+  "lib/puppet/provider/shellvar/augeas.rb": "7c6e09f81fe7eb51e6c38891e3e41f2b",
+  "lib/puppet/type/shellvar.rb": "8a12b8921946df6ba8cc6c69b977406b",
+  "metadata.json": "c75207b8c14071eb9dcee868938f84a9",
+  "spec/fixtures/unit/puppet/provider/shellvar/augeas/broken": "70088fc19e701ca7311efe891bdfc62b",
+  "spec/fixtures/unit/puppet/provider/shellvar/augeas/commented": "98957953aded5ab9b39a773320375345",
+  "spec/fixtures/unit/puppet/provider/shellvar/augeas/empty": "d41d8cd98f00b204e9800998ecf8427e",
+  "spec/fixtures/unit/puppet/provider/shellvar/augeas/full": "f880940628799e4801c94d3b1678c071",
+  "spec/fixtures/unit/puppet/provider/shellvar/augeas/full_multiline": "7858b8926b716478ee63c845e80d4b50",
+  "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+  "spec/spec_helper.rb": "aa36d30d17b2cab229e4381d90e97472",
+  "spec/unit/puppet/provider/shellvar/augeas_spec.rb": "47032f2de4b74122d1f88cfb419f0eb3",
+  "spec/unit/puppet/type/shellvar_type_spec.rb": "6d846be0cdaf78bf233e0603481e3b79"
+}
