@@ -14,3 +14,5 @@ forge 'http://forge.puppetlabs.com'
 mod 'puppetlabs/pwshlib', '0.4.1'
 mod 'puppetlabs/motd', :latest
 mod 'puppetlabs/chocolatey', :latest
+mod 'puppetlabs/dsc', :latest
+mod 'puppetlabs/registry', :latest
