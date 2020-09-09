@@ -2,7 +2,7 @@
 
 ## Steps
 
-1. Go to [the Bolt documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html)
+1. Go to [the Bolt installation documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html)
 
 - Follow the instructions to install Bolt for your OS platform.
  For example, if running Windows follow the instructions for installing Bolt with MSI.
