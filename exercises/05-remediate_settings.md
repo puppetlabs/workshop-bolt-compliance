@@ -1,7 +1,5 @@
 # Exercise #5: Use Bolt to remediate CIS settings
 
-## Steps
-
  - Run the following commands:
 
 
