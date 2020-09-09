@@ -20,19 +20,7 @@ groups:
         ssl: false
 ```
 
-- Replace the SSH `key` field with the appropriate path to your 'boltshop' directory which contains an ssh key, boltkey.pem.
-
-```
-config:
-      transport: ssh
-      ssh:
-        user: centos
-        key: /path/to/boltshop/boltkey.pem
-        host-key-check: false
-        run-as: root
-```
-
-- Save and close inventory.yaml
+- Save inventory.yaml
 
 - From your command shell (esure you are in the boltshop directory), run `bolt inventory show --targets all`
 
