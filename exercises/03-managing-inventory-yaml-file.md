@@ -34,7 +34,7 @@ config:
 
 - Save and close inventory.yaml
 
-- From your command shell (esure you are in the boltshop directory), run `bolt inventory show --targets windows`
+- From your command shell (esure you are in the boltshop directory), run `bolt inventory show --targets all`
 
 Sample Output:
 
