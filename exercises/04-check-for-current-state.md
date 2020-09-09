@@ -13,7 +13,7 @@
 `bolt command run "cat /etc/ssh/sshd_config | grep PermitRootLogin" -t nix`
 
 
-`bolt task run package name=ftp action=status -t nix`
+`bolt task run package name=vsftpd action=status -t nix`
 
 
 # Exercise #4 - Continued
