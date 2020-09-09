@@ -11,7 +11,7 @@ groups:
   - name: windows
     targets:
       - uri: bolt91620win000.classroom.puppet.com
-        alias: www
+        alias: win
     config:
       transport: winrm
       winrm:
