@@ -10,7 +10,7 @@ This project: [download link](https://github.com/puppetlabs/workshop-bolt-compli
 
 - Open a shell and change to that directory.
 
-Run `bolt task show` to verify you have tasks that start with `boltshop::`.
+Run `bolt task show` to verify you have tasks that start with `compliance::`.
 
 *Note: If you are using PowerShell, make sure your boltshop path is respecting case sensitivity.*
 
@@ -19,8 +19,8 @@ Sample Output:
 
 ```
 PS C:\code\boltshop> bolt task show
-boltshop::helloworld       Say Hello World!
-boltshop::windowsfeature   Installs a Windows Feature
+compliance::helloworld       Say Hello World!
+compliance::windowsfeature   Installs a Windows Feature
 facts                      Gather system facts
 package                    Manage and inspect the state of packages
 pkcs7::secret_createkeys   Create a key pair
