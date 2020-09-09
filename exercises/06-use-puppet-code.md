@@ -7,6 +7,13 @@
 `bolt plan run secure_linux_cis time_servers='["0.us.pool.ntp.org","1.us.pool.ntp.org"]'  profile_type=workstation nodes=bolt91620nix000.classroom.puppet.com`
 
 
+- To verify some results, run:
+
+`bolt command run "cat /etc/ssh/sshd_config | grep PermitRootLogin" -t nix`
+
+`bolt script run scripts/umask_check.sh -t nix`
+
+
 # Exercise #6 - Continued - Windows
 
  - Run the following command:
