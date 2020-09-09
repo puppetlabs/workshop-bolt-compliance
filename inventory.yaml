@@ -2,7 +2,7 @@ groups:
   - name: windows
     targets:
       - uri: bolt91620win000.classroom.puppet.com
-        alias: win0
+        alias: win
     config:
       transport: winrm
       winrm:
@@ -12,7 +12,7 @@ groups:
   - name: linux
     targets:
       - uri: bolt91620nix000.classroom.puppet.com
-        alias: nix0
+        alias: nix
     config:
       transport: ssh
       ssh:
