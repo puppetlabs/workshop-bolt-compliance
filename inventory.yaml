@@ -17,6 +17,6 @@ groups:
       transport: ssh
       ssh:
         user: centos
-        key: /path/to/boltshop/boltkey.pem
+        private-key: ./boltkey.pem
         host-key-check: false
         run-as: root
