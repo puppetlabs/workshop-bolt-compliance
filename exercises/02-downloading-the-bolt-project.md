@@ -4,7 +4,7 @@ This project: [download link](https://github.com/puppetlabs/workshop-bolt-compli
 
 ## Steps
 
-- Clone or download from the above link.
+- Clone or download zip from the above link.
 
 - Place into a ‘boltshop’ directory where you like or extract where you like and rename directory to 'boltshop'.
 
