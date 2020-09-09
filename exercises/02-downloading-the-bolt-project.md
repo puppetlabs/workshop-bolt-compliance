@@ -1,12 +1,12 @@
 # Exercise #2: Downloading the Bolt Project
 
-This project: [download link](https://github.com/puppetlabs-seteam/windows-boltshop)
+This project: [download link](https://github.com/puppetlabs/workshop-bolt-compliance)
 
 ## Steps
 
 - Clone or download from the above link.
 
-- Place into a ‘boltshop’ directory where you like.
+- Place into a ‘boltshop’ directory where you like or extract where you like and rename directory to 'boltshop'.
 
 - Open a shell and change to that directory.
 
