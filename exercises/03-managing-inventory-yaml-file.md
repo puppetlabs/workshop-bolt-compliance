@@ -22,7 +22,7 @@ groups:
 
 - Save inventory.yaml
 
-- From your command shell (esure you are in the boltshop directory), run `bolt inventory show --targets all`
+- From your command shell (ensure you are in the boltshop directory), run `bolt inventory show --targets all`
 
 Sample Output:
 
@@ -34,4 +34,4 @@ bolt0916win99.classroom.puppet.com
 
 - To test connectivity to your nodes, run `bolt command run hostname --targets all`
 
-- Verify you get a resonse from each target (1 Windows and 1 Linux) and there are no errors
+- Verify you get a response from each target (1 Windows and 1 Linux) and there are no errors
