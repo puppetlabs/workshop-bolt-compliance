@@ -20,7 +20,7 @@ PS C:\code\boltshop> bolt --version
 2.27.0
 ```
 
-You need **at least** version 2.22.0 installed. If you on an earlier release, visit [the Bolt documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html).
+You need **at least** version 2.24.0 installed. If you on an earlier release, visit [the Bolt documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html).
 
 - If you get an error running Bolt on Windows, it may be due to a security restriction on some Windows systems. Follow the 'Change execution policy restrictions' section in the installing Bolt documentation.
 It has you run Powershell as an administrator and then has you run the following command `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
