@@ -1,0 +1,8 @@
+---
+local_security_policy::settings:
+  "Interactive logon: Machine inactivity limit":
+    ensure: 'present'
+    policy_value: '150'
+  "Allow log on through Remote Desktop Services":
+    ensure: 'present'
+    policy_value: 'merge: Administrators,+Remote Desktop Users,-Power Users'

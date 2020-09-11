@@ -1,0 +1,8 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: ./spec/hieradata/beaker
+:hierarchy:
+  - %{::os.release.major}
+  - common
