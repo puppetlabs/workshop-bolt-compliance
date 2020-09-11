@@ -18,7 +18,7 @@
 
  - Run the following command:
  
- `bolt apply code/acct_lockout_settings.pp -t win'
+ `bolt apply code/acct_lockout_settings.pp -t win`
  
  
 - To verify some results, run:
