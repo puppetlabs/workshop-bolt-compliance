@@ -1,0 +1,22 @@
+parameters:
+  targets:
+    type: TargetSpec
+steps:
+  - command: '$x = "C:\Program Files\PackageManagement\ProviderAssemblies\nuget\2.8.5.208"; if (!(Test-Path $x)) { New-Item -Type Directory -Path $x -Force }'
+    targets: $targets
+  - upload: 'compliance/Microsoft.PackageManagement.NuGetProvider.dll'
+    description: 'Uploading the Nuget DLL'
+    destination: 'C:\Program Files\PackageManagement\ProviderAssemblies\nuget\2.8.5.208\Microsoft.PackageManagement.NuGetProvider.dll'
+    targets: $targets
+  - command: 'Import-PackageProvider -Name NuGet -RequiredVersion 2.8.5.208'
+    description: 'Adding NuGet Package Provider'
+    targets: $targets
+  - command: 'If (!(Get-PSRepository PSGallery)) { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Register-PSRepository -Default }'
+    targets: $targets
+  - command: 'If (!(Get-Module SecurityPolicyDSC)) { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;Install-Module -Name SecurityPolicyDSC -Force }'
+    targets: $targets
+# [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+# If (!(Get-PackageProvider Nuget)) { Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force }
+# If (!(Get-PSRepository PSGallery)) { Register-PSRepository -Default -Force }
+# IF (!(Get-Module SecurityPolicyDSC)) { Install-Module -Name SecurityPolicyDSC -Force }
+  

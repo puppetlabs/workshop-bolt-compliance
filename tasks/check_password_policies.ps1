@@ -1,3 +1,4 @@
+Import-Module SecurityPolicyDSC -Force
 $commonParams = @{
   Name = 'AccountPolicy'
   Property = @{ 
