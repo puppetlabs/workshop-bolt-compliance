@@ -30,6 +30,4 @@
 
 - Run the following commands:
 
-tbd
-
-tbd
+`bolt task run compliance::check_password_policies -t win'
