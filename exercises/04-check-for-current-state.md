@@ -30,4 +30,6 @@
 
 - Run the following commands:
 
+`bolt plan run compliance::prep_windows targets=ng91020win1.classroom.puppet.com` to set some Windows prereqs
+
 `bolt task run compliance::check_password_policies -t win`
