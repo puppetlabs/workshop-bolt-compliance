@@ -18,4 +18,9 @@
 
  - Run the following command:
  
- tbd
+ `bolt apply code/acct_lockout_settings.pp -t win'
+ 
+ 
+- To verify some results, run:
+
+`bolt task run compliance::check_password_policies -t win`
