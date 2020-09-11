@@ -20,6 +20,9 @@
 
  - Run the following commands:
  
- tbd
+ `bolt task run compliance::enforce_minimum_password_length -t win`
  
- tbd
+ 
+- Check that settings were properly configured:
+ 
+ `bolt task run compliance::check_password_policies -t win`
