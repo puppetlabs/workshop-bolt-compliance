@@ -1,0 +1,23 @@
+---
+local_security_policy::settings:
+  "Account lockout threshold":
+    ensure: 'present'
+    policy_value: '150'
+  "Reset account lockout counter after":
+    ensure: 'present'
+    policy_value: '25'
+  "Account lockout duration":
+    ensure: 'present'
+    policy_value: '150'
+  "Enforce password history":
+    ensure: 'present'
+    policy_value: '150'
+  "Maximum password age":
+    ensure: 'present'
+    policy_value: '150'
+  "Minimum password age":
+    ensure: 'present'
+    policy_value: '50'
+  "Minimum password length":
+    ensure: 'present'
+    policy_value: '5'
