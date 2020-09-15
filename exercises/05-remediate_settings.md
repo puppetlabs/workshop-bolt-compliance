@@ -23,6 +23,6 @@
  `bolt task run compliance::enforce_minimum_password_length -t win`
  
  
-- Check that settings were properly configured:
+- Check that settings were properly configured - task will automatically show new password settings
  
- `bolt task run compliance::check_password_policies -t win`
+
