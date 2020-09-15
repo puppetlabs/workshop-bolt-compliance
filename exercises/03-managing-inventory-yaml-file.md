@@ -27,9 +27,10 @@ groups:
 Sample Output:
 
 ```
-PS C:\code\boltshop> bolt inventory show 
-bolt0916win99.classroom.puppet.com
-1 target
+PS C:\code\boltshop> bolt inventory show -t all
+bolt0916win0.classroom.puppet.com
+bolt0916nix0.classroom.puppet.com
+2 targets
 ```
 
 - To test connectivity to your nodes, run `bolt command run hostname --targets all`
