@@ -4,13 +4,13 @@
 
 - Edit inventory.yaml
 
-- Replace the 000 in the `uri` field with your assigned server’s number for BOTH the Windows and Linux targets.
+- Replace the 000 in the `uri` field with your assigned VM number for BOTH the Windows and Linux targets.
 
 ```
 groups:
   - name: windows
     targets:
-      - uri: bolt91620win000.classroom.puppet.com
+      - uri: bolt0916win000.classroom.puppet.com
         alias: win
     config:
       transport: winrm
