@@ -1,5 +1,5 @@
 #!/bin/bash
-cat /etc/bashrc | grep umask
-cat /etc/login.defs | grep umask
-cat /etc/profile | grep umask
-cat /etc/csh.cshrc | grep umask
+grep umask /etc/bashrc
+grep umask /etc/logindefs
+grep umask /etc/profile
+grep umask /etc/csh.cshrc
