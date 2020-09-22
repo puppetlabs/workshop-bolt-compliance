@@ -1,11 +1,9 @@
 # Bolt Compliance Workshop
 Labs for checking and enforcing compliance controls with Puppet Bolt 
 
-
 Dependency map :
 fervid-secure_linux_cis: (https://forge.puppet.com/fervid/secure_linux_cis)
     aboe/chrony (>= 0.3.0 < 1.0.0)
-        
     camptocamp/augeas (>= 1.8.0 < 2.0.0)
         puppetlabs/augeas_core (>=1.0.0 <2.0.0) 
     camptocamp/kmod (>= 2.3.0 < 3.0.0)
@@ -41,6 +39,5 @@ fervid-secure_linux_cis: (https://forge.puppet.com/fervid/secure_linux_cis)
         puppetlabs/stdlib (>= 4.0.0 < 7.0.0) 
     puppetlabs/reboot (>= 1.0.0 < 3.0.0)
     puppetlabs/stdlib (>= 4.0.0 <= 7.0.0)
-
 puppetlabs-iis: (https://forge.puppet.com/puppetlabs/iis)
     puppetlabs/pwshlib (>= 0.4.0 < 2.0.0) 
