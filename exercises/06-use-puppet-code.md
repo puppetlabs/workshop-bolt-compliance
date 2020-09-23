@@ -1,15 +1,15 @@
 # Exercise #6 - Use Puppet code with Bolt to remediate CIS settings
 
 
- - Run the following command (please ensure that you change the node name 000 to your assigned VM number):
+ - Run the following command:
 
 
-`bolt plan run secure_linux_cis time_servers='["0.us.pool.ntp.org","1.us.pool.ntp.org"]'  profile_type=workstation nodes=bolt0916nix000.classroom.puppet.com`
+`bolt plan run secure_linux_cis time_servers='["0.us.pool.ntp.org","1.us.pool.ntp.org"]'  profile_type=workstation nodes=nix`
 
 
 - To verify some results, run:
 
-`bolt command run "cat /etc/ssh/sshd_config | grep PermitRootLogin" -t nix`
+`bolt command run "grep PermitRootLogin /etc/ssh/sshd_config" -t nix`
 
 `bolt script run scripts/umask_check.sh -t nix`
 
