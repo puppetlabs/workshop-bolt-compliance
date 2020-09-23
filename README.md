@@ -1,6 +1,6 @@
 # Bolt Compliance Workshop
 Labs for checking and enforcing compliance controls with Puppet Bolt 
-*Important internal note - hydra targets must be built without applying CD4PE Baseline configuration in order for final CIS plan to work.*
+`Important internal note - hydra targets must be built without applying CD4PE Baseline configuration in order for final CIS plan to work.`
 
 ## Dependency map :
 
