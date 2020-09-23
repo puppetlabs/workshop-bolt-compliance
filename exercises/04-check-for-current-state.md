@@ -7,10 +7,10 @@
 - Run the following commands:
 
 
-`bolt command run "cat /etc/login.defs | grep PASS_MIN_DAYS" -t nix`
+`bolt command run "grep PASS_MIN_DAYS /etc/login.defs" -t nix`
 
 
-`bolt command run "cat /etc/ssh/sshd_config | grep PermitRootLogin" -t nix`
+`bolt command run "grep PermitRootLogin /etc/ssh/sshd_config" -t nix`
 
 
 `bolt task run package name=vsftpd action=status -t nix`
