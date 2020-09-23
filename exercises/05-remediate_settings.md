@@ -13,7 +13,7 @@
  
  `bolt command run "ls -l /boot/grub2/grub.cfg" -t nix`
  
- `bolt command run "cat /etc/login.defs | grep PASS_MIN_DAYS" -t nix`
+ `bolt command run "grep PASS_MIN_DAYS /etc/login.defs" -t nix`
 
 
 # Exercise #5: Continued - Windows
