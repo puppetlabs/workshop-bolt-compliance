@@ -17,6 +17,6 @@ groups:
       transport: ssh
       ssh:
         user: centos
-        private-key: ./boltkey.pem
+        private-key: ./student.pem
         host-key-check: false
         run-as: root
