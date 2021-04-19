@@ -19,24 +19,15 @@ Sample Output:
 
 ```
 PS C:\code\boltshop> bolt task show
-compliance::helloworld       Say Hello World!
-compliance::windowsfeature   Installs a Windows Feature
-facts                      Gather system facts
-package                    Manage and inspect the state of packages
-pkcs7::secret_createkeys   Create a key pair
-pkcs7::secret_decrypt      Encrypt sensitive data with pkcs7
-pkcs7::secret_encrypt      Encrypt sensitive data with pkcs7
-puppet_agent::install      Install the Puppet agent package
-puppet_agent::version      Get the version of the Puppet agent package installed. Returns nothing if none present.
-puppet_conf                Inspect puppet agent configuration settings
-reboot                     Reboots a machine
-reboot::last_boot_time     Gets the last boot time of a Linux or Windows system
-service                    Manage and inspect the state of services
-terraform::apply           Apply an HCL manifest
-terraform::destroy         Destroy resources managed with Terraform
-terraform::initialize      Initialize a Terraform project directory
-terraform::output          JSON representation of Terraform outputs
-
-MODULEPATH:
-C:/code/boltshop/modules
+Tasks
+  compliance::check_password_policies
+  compliance::enforce_minimum_password_length
+  compliance::enforce_password_complexity
+  compliance::helloworld                          Say Hello World!
+  compliance::windows_prep
+  facts                                           Gather system facts
+  http_request                                    Make a HTTP or HTTPS request.
+  package                                         Manage and inspect the state of packages
+  pkcs7::secret_createkeys                        Create a key pair
+  ...
 ```
