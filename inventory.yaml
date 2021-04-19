@@ -1,7 +1,7 @@
 groups:
   - name: windows
     targets:
-      - uri: boltws0112win000.classroom.puppet.com
+      - uri: boltws0422win00.classroom.puppet.com
         alias: win
     config:
       transport: winrm
@@ -11,7 +11,7 @@ groups:
         ssl: false
   - name: linux
     targets:
-      - uri: boltws0112nix000.classroom.puppet.com
+      - uri: boltws0422nix00.classroom.puppet.com
         alias: nix
     config:
       transport: ssh
