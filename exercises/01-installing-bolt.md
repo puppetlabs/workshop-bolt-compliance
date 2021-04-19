@@ -17,7 +17,7 @@ Sample output:
 
 ```
 PS C:\code\boltshop> bolt --version
-2.27.0
+3.7.0
 ```
 
 You need **at least** version 2.24.0 installed. If you on an earlier release, visit [the Bolt documentation](https://puppet.com/docs/bolt/latest/bolt_installing.html).
