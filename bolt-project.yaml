@@ -1,5 +1,5 @@
 ---
 name: compliance
-inventoryfile: "./inventory.yaml"
+#inventoryfile: "./inventory.yaml"
 modulepath: 
   - "./modules"
