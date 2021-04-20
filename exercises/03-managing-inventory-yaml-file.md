@@ -27,7 +27,8 @@ groups:
 
 - Save inventory.yaml
 
-- DOWNLOAD student.pem SSH key and place in the root of your project directory: https://bolt0422.classroom.puppet.com/download/student.pem
+- OPEN this link for your SSH key: https://bit.ly/BoltHostKey
+- CREATE a file in your bolt project directory named student.pem and copy the SSH key into this file, save.
 
 - From your command shell (ensure you are in the boltshop directory), run `bolt inventory show --targets all`
 
