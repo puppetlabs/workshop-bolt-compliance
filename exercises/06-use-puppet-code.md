@@ -6,6 +6,8 @@
 
 `bolt plan run secure_linux_cis time_servers='["0.us.pool.ntp.org","1.us.pool.ntp.org"]'  profile_type=workstation nodes=nix`
 
+*if running bolt from Windows Powershell use this command:
+'Invoke-BoltPlan -Name secure_linux_cis -Params '@params.json' -Targets nix'
 
 - To verify some results, run:
 
