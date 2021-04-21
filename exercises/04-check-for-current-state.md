@@ -30,6 +30,6 @@
 
 - Run the following commands:
 
-`bolt plan run compliance::prep_windows targets=win`   to set some Windows prereqs 
+`bolt plan run compliance::prep_windows targets=win` 
 
 `bolt task run compliance::check_password_policies -t win`
