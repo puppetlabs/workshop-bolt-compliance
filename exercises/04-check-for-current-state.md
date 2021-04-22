@@ -6,13 +6,13 @@
 
 - Run the following commands:
 
-
+To check the minimum password age is at least 7:
 `bolt command run "grep PASS_MIN_DAYS /etc/login.defs" -t nix`
 
-
+To check whether the root login is disabled:
 `bolt command run "grep PermitRootLogin /etc/ssh/sshd_config" -t nix`
 
-
+To check whether the FTP server package is not installed:
 `bolt task run package name=vsftpd action=status -t nix`
 
 
@@ -20,9 +20,10 @@
 
 - Run the following commands:
 
+To check the file permissions of the bootloader configuration are 0600:
 `bolt command run "ls -l /boot/grub2/grub.cfg" -t nix`
 
-
+To check whether the umask is at least 027 (in multiple locations):
 `bolt script run scripts/umask_check.sh -t nix`
 
 
