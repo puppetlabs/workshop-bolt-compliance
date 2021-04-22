@@ -43,3 +43,11 @@ To execute a pre-requisite for Windows systems:
 To check for numerous Windows password policies:
 
 `bolt task run compliance::check_password_policies -t win`
+
+Windows password requirements:
+-Check the minimum password age is at least 7
+-Check whether password complexity requirements are enabled
+-Check account lockout duration is at least 15
+-Check account lockout threshold is 10 or less but not 0
+-Check reset account lockout is at least 15
+
